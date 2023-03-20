@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="eng" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+		      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Arct-digital</title>
+		<link
+				rel="stylesheet"
+				href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+		<link href="/dist/output.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Prata&family=Rubik:wght@300;400&display=swap"
+		      rel="stylesheet">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+	</head>
+	<body>
+		<div class="smooth-wrapper">
+			<div class="smooth-content">
+				<header id="home" data-aos="zoom-in"
+				        class="bg-hero bg-cover 2xl:bg-contain bg-no-repeat h-234.5 lg:bg-right lg:px-12">
+					<div class="3xl:container mx-auto">
+						<div x-data="{ open: false }" class="mobile-menu xl:hidden relative">
+							<div class="flex justify-between px-5 pt-10">
+								<div class="w-10.25 mr-24">
+									<img src="./assets/logo@3x.png" alt="logo">
+								</div>
+								
+								<button @click="open = true">
+									<svg xmlns="http://www.w3.org/2000/svg"
+									     fill="none"
+									     viewBox="0 0 24 24"
+									     stroke-width="1.5"
+									     stroke="currentColor"
+									     class="w-6 h-6">
+										<path stroke-linecap="round"
+										      stroke-linejoin="round"
+										      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+									</svg>
+								</button>
+							</div>
+							
+							<div x-show="open"
+							     x-transition
+							     class="absolute w-screen -top-1 snap-none h-screen bg-white z-40">
+								<button @click="open = false" class="fixed right-4 top-10">
+									<svg xmlns="http://www.w3.org/2000/svg"
+									     fill="none"
+									     viewBox="0 0 24 24"
+									     stroke-width="1.5"
+									     stroke="currentColor"
+									     class="w-6 h-6">
+										<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+									</svg>
+								
+								</button>
+								<ul class="flex flex-col space-y-3 items-center justify-center space-y-10 h-screen">
+									<li>Home</li>
+									<li>About</li>
+									<li>Portfolio</li>
+									<li>Blog</li>
+									<li>Contact</li>
+								</ul>
+							</div>
+						</div>
+						<nav class="hidden xl:flex justify-between pl-22.25 pt-17">
+							<div class="flex items-center">
+								<div class="w-10.25 mr-24">
+									<img src="./assets/logo@3x.png" alt="logo">
+								</div>
+								
+								<ul class="flex flex-wrap w-114.25 justify-between">
+									<li class="menu-item">Home</li>
+									<li class="menu-item">About</li>
+									<li class="menu-item">Services</li>
+									<li class="menu-item">Portfolio</li>
+									<li class="menu-item">Contact</li>
+								</ul>
+							</div>
+						</nav>
+						
+						<div data-aos="fade-up"
+						     class="pt-20 2xl:w-149 xl:w-231.5 2xl:ml-78 2xl:mt-27.25 ml-10 text-5xl md:text-[90px] font-serif capitalize leading-light text-primary">
+							<h1>Invest in your future, invest with us</h1>
+						</div>
+						
+						
+						<div data-aos="fade-up"
+						     class="w-72 lg:w-full xl:w-231.5 2xl:w-297 2xl:h-54.5 2xl:ml-74 ml-10 px-5 py-5 bg-white shadow-md flex flex-col items-center space-y-10 2xl:space-y-0 2xl:flex-row lg:justify-between">
+							<p
+									class="inline-flex 2xl:w-182  text-lg leading-large tracking-normal text-default font-normal">
+								It
+								is a
+								multi-venue
+								performing
+								arts
+								centre
+								at
+								Sydney
+								Harbour
+								located
+								in
+								Sydney,
+								New
+								South
+								Wales,
+								Australia.
+								It is
+								one of
+								the
+								20th
+								century's
+								most
+								famous
+								and
+								distinctive
+								buildings.</p>
+							<button
+									class="inline-flex items-center uppercase border px-8 py-3.5 w-52 h-16.75 3xl:mr-19 3xl:mt-13.75 3xl:ml-32.75 text-base text-primary transition-all duration-150 hover:scale-110">
+								View project
+								
+								<svg xmlns="http://www.w3.org/2000/svg"
+								     fill="none"
+								     viewBox="0 0 24 24"
+								     stroke-width="1.5"
+								     stroke="currentColor"
+								     class="w-6 h-6">
+									<path stroke-linecap="round"
+									      stroke-linejoin="round"
+									      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+								</svg>
+							</button>
+						</div>
+					
+					</div>
+				</header>
+				<main>
+					<div data-speed="2" class="3xl:container mx-auto">
+						<section data-aos="zoom-in-up" data-aos-duration="1000" id="aboutMe"
+						         class="flex flex-col items-center 2xl:items-start 2xl:justify-between 2xl:ml-50 2xl:mr-62.5 mt-60 2xl:flex-row">
+							<div class="h-16.75 text-center">
+								<h2 id="about-me" class="relative text-5xl font-serif capitalize">About me</h2>
+							</div>
+							<div class="md:w-149 lg:w-193.75 flex flex-col px-5 text-center text-justify lg:text-left">
+								<h3 class="text-xl 3xl:text-3xl leading-relaxed text-textDefault mb-9">Viverra senectus
+								                                                                       lorem
+								                                                                       ipsum
+								                                                                       dolor
+								                                                                       sit
+								                                                                       adui
+								                                                                       ultricies dolor.
+								                                                                       Varius nibh
+								                                                                       velit
+								                                                                       pellentesque
+								                                                                       sapi viverra
+								                                                                       euen,
+								                                                                       sapien
+								                                                                       non
+								                                                                       senectus
+								                                                                       odio neque
+								                                                                       dignissim.</h3>
+								
+								<p class="leading-loose text-default lg:text-left tracking-wide mb-12">Lorem ipsum dolor
+								                                                                       sit
+								                                                                       amet,
+								                                                                       consectetur
+								                                                                       adipiscing
+								                                                                       elit. Et
+								                                                                       mauris
+								                                                                       sed
+								                                                                       faucibus
+								                                                                       amet
+								                                                                       lobortis
+								                                                                       netus vehicula
+								                                                                       pretium.
+								                                                                       Rhoncus
+								                                                                       laoreet feugiat
+								                                                                       orci rutrum risus
+								                                                                       gravida
+								                                                                       ultricies lacinia
+								                                                                       faucibus. Mauris
+								                                                                       ut
+								                                                                       id
+								                                                                       scelerisque
+								                                                                       quis hac
+								                                                                       luctus nunc. Quis
+								                                                                       at
+								                                                                       maecenas
+								                                                                       velit non. Sit
+								                                                                       amet, consectetur
+								                                                                       adipiscing
+								                                                                       elit.
+								                                                                       Et mauris sed
+								                                                                       faucibus amet
+								                                                                       lobortis
+								                                                                       netus
+								                                                                       vehicula
+								                                                                       pretium. Rhoncus
+								                                                                       laoreet
+								                                                                       feugiat
+								                                                                       orci rutrum
+								                                                                       risus gravida
+								                                                                       ultricies
+								                                                                       lacinia
+								                                                                       faucibus. Mauris
+								                                                                       ut id scelerisque
+								                                                                       quis
+								                                                                       hac
+								                                                                       luctus
+								                                                                       nunc. Quis at
+								                                                                       maecenas velit
+								                                                                       non.
+								                                                                       Lorem
+								                                                                       ipsum
+								                                                                       dolor sit
+								                                                                       amet, consectetur
+								                                                                       adipiscing
+								                                                                       elit.</p>
+								
+								<p class="leading-loose text-default lg:text-left tracking-wide">Et mauris sed faucibus
+								                                                                 amet
+								                                                                 lobortis
+								                                                                 netus
+								                                                                 vehicula
+								                                                                 pretium.
+								                                                                 Rhoncus
+								                                                                 laoreet
+								                                                                 feugiat
+								                                                                 orci
+								                                                                 rutrum risus gravida
+								                                                                 ultricies
+								                                                                 lacinia faucibus.
+								                                                                 Mauris ut id
+								                                                                 scelerisque
+								                                                                 quis
+								                                                                 hac
+								                                                                 luctus
+								                                                                 nunc. Quis at maecenas
+								                                                                 velit
+								                                                                 non.</p>
+								
+								<button
+										class="inline-flex items-center uppercase border px-9 justify-center py-3.5 2xl:w-54.5 h-16.75 mt-13.75 text-base text-primary transition-all duration-150 hover:scale-110">
+									View my works
+									
+									<svg xmlns="http://www.w3.org/2000/svg"
+									     fill="none"
+									     viewBox="0 0 24 24"
+									     stroke-width="1.5"
+									     stroke="currentColor"
+									     class="w-6 h-6">
+										<path stroke-linecap="round"
+										      stroke-linejoin="round"
+										      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+									</svg>
+								
+								</button>
+							</div>
+						</section>
+						
+						<section data-aos="zoom-in-up" id="portfolio" class="mt-64 3xl:ml-50 3xl:mr-62.5">
+							<div class="2xl:container mx-auto">
+								<div class="flex flex-col items-center lg:space-y-3 2xl:flex-row px-9">
+									<div class="2xl:w-114.25 text-center 2xl:text-left mb-10 lg:mb-0">
+										<h2 class="text-5xl mb-8 font-serif capitalize">My portfolio</h2>
+										
+										<span class="text-default leading-loose">Viverra senectus dui ultricies dolor varius nibh
+											                                           velit
+												                              sapien, sapien
+												           pellentesque ue dignissim.</span>
+									</div>
+									
+									<ul
+											class="flex flex-col space-y-4 sm:space-y-0 sm:flex-row 2xl:ml-64 lg:w-149 justify-between items-center uppercase text-default tracking-wide">
+										<li class="hover:cursor-pointer hover:text-hover">All</li>
+										<li class="hover:cursor-pointer hover:text-hover">Houses</li>
+										<li class="hover:cursor-pointer hover:text-hover">Buildings</li>
+										<li class="hover:cursor-pointer hover:text-hover">Hotels</li>
+										<li class="hover:cursor-pointer hover:text-hover">Interior</li>
+										<li class="hover:cursor-pointer hover:text-hover">Living rooms</li>
+									</ul>
+								</div>
+								
+								<div class="flex flex-col lg:flex-row mt-36 px-10 space-y-10 lg:space-y-0">
+									<div class="lg:w-1/2 grid grid-cols-1 lg:grid-cols-2 gap-y-13 gap-x-16 lg:mr-15.75">
+										<img class="lg:col-span-2" src="./assets/rectangle-37.jpg" alt="">
+										<img class="w-full lg:w-99" src="./assets/Rectangle%2053.jpg" alt="">
+										<img class="w-full lg:w-99" src="./assets/Rectangle%2054.jpg" alt="">
+										<img class="w-full lg:w-99" src="./assets/Rectangle%2055.jpg" alt="">
+										<img class="w-full lg:w-99" src="./assets/Rectangle%2056.jpg" alt="">
+									</div>
+									
+									<div class="lg:w-1/2 grid grid-cols-1 lg:grid-cols-2 gap-y-13 gap-x-16">
+										<img class="w-full lg:w-99" src="./assets/Rectangle 46.jpg" alt="">
+										<img class="w-full lg:w-99" src="./assets/rect-38.jpg" alt="">
+										<img class="w-full lg:w-99" src="./assets/rect-41.jpg" alt="">
+										<img class="w-full lg:w-99" src="./assets/rect-40.jpg" alt="">
+										<img class="lg:col-span-2" src="./assets/rectangle-52.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</section>
+						
+						
+						<section data-aos="zoom-in-up" id="services" class="mt-64 2xl:ml-50 2xl:mr-62.5">
+							<div class="flex flex-col lg:space-y-3 2xl:space-y-0 2xl:flex-row justify-between">
+								<div class="2xl:w-114.25 text-center 2xl:text-left">
+									<h2 class="text-5xl 2xl:text-left mb-8 font-serif capitalize">View my services</h2>
+									
+									<span class="text-default leading-loose">Id at urna non viverra eu volutpat
+										                                                 porttitor
+										                                          elementum. Viverra senectus dui ultricies dolor. Varius nibh velit pellentesque sapien, sapien neque dignissim.</span>
+								</div>
+								
+								<div class="grid grid-cols-1 sm:justify-items-center lg:grid-cols-2 gap-13 2xl:gap-10 px-5">
+									<div class="sm:w-109.25 pt-12.5 pb-18 px-15.75 text-center lg:text-left shadow-xl">
+										<h4 class="text-2xl mb-1.5 text-primary capitalize">Architecture Portfolio</h4>
+										
+										<p class="text-default leading-loose">There are many variations of passages of
+										                                      Lorem
+										                                      is
+										                                      as Ipsum
+										                                      available
+										                                      but the
+										                                      majority have suffered alteration</p>
+									</div>
+									<div class="sm:w-109.25 pt-12.5 pb-18 px-15.75 text-center lg:text-left shadow-xl">
+										<h4 class="text-2xl mb-1.5 text-primary capitalize">Planning process</h4>
+										
+										<p class="text-default leading-loose">There are many variations of passages of
+										                                      Lorem
+										                                      is
+										                                      as Ipsum
+										                                      available
+										                                      but the
+										                                      majority have suffered alteration</p>
+									</div>
+									<div class="sm:w-109.25 pt-12.5 pb-18 px-15.75 text-center lg:text-left shadow-xl">
+										<h4 class="text-2xl mb-1.5 text-primary capitalize">Unique design</h4>
+										
+										<p class="text-default leading-loose">There are many variations of passages of
+										                                      Lorem
+										                                      is
+										                                      as Ipsum
+										                                      available
+										                                      but the
+										                                      majority have suffered alteration</p>
+									</div>
+									<div class="sm:w-109.25 pt-12.5 pb-18 px-15.75 text-center lg:text-left shadow-xl">
+										<h4 class="text-2xl mb-1.5 text-primary capitalize">Consultation</h4>
+										
+										<p class="text-default leading-loose">There are many variations of passages of
+										                                      Lorem
+										                                      is
+										                                      as Ipsum
+										                                      available
+										                                      but the
+										                                      majority have suffered alteration</p>
+									</div>
+								</div>
+							</div>
+						</section>
+						
+						<section data-aos="zoom-in-up" id="stats"
+						         class="mt-60 lg:w-240 3xl:w-322 mx-auto flex flex-col lg:flex-row space-y-10 lg:space-y-0 justify-between
+							         text-center">
+									<span class="text-default uppercase"><span class="text-7xl font-serif text-light-grey">750</span>
+										projects
+									                                                                                 done</span>
+							<span class="text-default uppercase"><span class="text-7xl font-serif text-light-grey">315</span>
+										regular clients</span>
+							<span class="text-default uppercase"><span class="text-7xl font-serif text-light-grey">19</span>
+										years experience
+									</span>
+						</section>
+						
+						<section data-aos="zoom-in-up" id="clientsComments" class="mt-48 relative">
+							<img src="assets/Rectangle%2064.jpg" alt="" class="hidden 3xl:block lg:ml-18">
+							<div
+									class="swiper-container-2 swiper bg-white md:w-149 mx-auto 2xl:w-240 3xl:h-202.5 pt-28 text-center 3xl:absolute right-0 -bottom-14">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<h2 class="text-5xl mb-8 font-serif capitalize">What clients says 1</h2>
+										
+										
+										<blockquote class="2xl:w-149 mx-auto">
+											<img src="./assets/quote.png" alt="quote">
+											<p class="text-2xl text-default font-light leading-loose">“Lorem ipsum dolor
+											                                                          sit
+											                                                          amet,
+											                                                          consectetur
+											                                                          adipiscing
+											                                                          elit. Proin est
+											                                                          et nibh eleifend
+											                                                          neque
+											                                                          ultrices. Sit
+											                                                          nulla
+											                                                          eget
+											                                                          vulputate
+											                                                          bibendum sit.
+											                                                          Fringilla lacus
+											                                                          rhoncus
+											                                                          posuere lectus.
+											                                                          Sectetur adipi
+											                                                          elit
+											                                                          proin est
+											                                                          et
+											                                                          nibh”</p>
+										
+										</blockquote>
+										
+										<div class="mt-8">
+											<span class="text-2xl text-textDefault">Armando Gonzalez</span><br>
+											<span class="text-default">CEO, Unity Real Estate</span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<h2 class="text-5xl mb-8 font-serif capitalize">What clients says 2</h2>
+										
+										
+										<blockquote class="2xl:w-149 mx-auto">
+											<img src="./assets/quote.png" alt="quote">
+											<p class="text-2xl text-default font-light leading-loose">“Lorem ipsum dolor
+											                                                          sit
+											                                                          amet,
+											                                                          consectetur
+											                                                          adipiscing
+											                                                          elit. Proin est
+											                                                          et nibh eleifend
+											                                                          neque
+											                                                          ultrices. Sit
+											                                                          nulla
+											                                                          eget
+											                                                          vulputate
+											                                                          bibendum sit.
+											                                                          Fringilla lacus
+											                                                          rhoncus
+											                                                          posuere lectus.
+											                                                          Sectetur adipi
+											                                                          elit
+											                                                          proin est
+											                                                          et
+											                                                          nibh”</p>
+										
+										</blockquote>
+										
+										<div class="mt-8">
+											<span class="text-2xl text-textDefault">Armando Gonzalez</span><br>
+											<span class="text-default">CEO, Unity Real Estate</span>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<h2 class="text-5xl mb-8 font-serif capitalize">What clients says 3</h2>
+										
+										
+										<blockquote class="2xl:w-149 mx-auto">
+											<img src="./assets/quote.png" alt="quote">
+											<p class="text-2xl text-default font-light leading-loose">“Lorem ipsum dolor
+											                                                          sit
+											                                                          amet,
+											                                                          consectetur
+											                                                          adipiscing
+											                                                          elit. Proin est
+											                                                          et nibh eleifend
+											                                                          neque
+											                                                          ultrices. Sit
+											                                                          nulla
+											                                                          eget
+											                                                          vulputate
+											                                                          bibendum sit.
+											                                                          Fringilla lacus
+											                                                          rhoncus
+											                                                          posuere lectus.
+											                                                          Sectetur adipi
+											                                                          elit
+											                                                          proin est
+											                                                          et
+											                                                          nibh”</p>
+										
+										</blockquote>
+										
+										<div class="mt-8">
+											<span class="text-2xl text-textDefault">Armando Gonzalez</span><br>
+											<span class="text-default">CEO, Unity Real Estate</span>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+						
+						</section>
+						
+						<section data-aos="zoom-in-up" id="faq"
+						         class="mt-54.5 3xl:ml-50 3xl:mr-52 flex flex-col 3xl:flex-row justify-between">
+							<div class="text-center">
+								<h2 class="text-5xl 3xl:text-left mb-8 font-serif capitalize">Faqs</h2>
+								<span class="text-default leading-loose">Id at urna non viverra eu volutpat porttitor
+										                                         elementum
+										                                         .<br> Viverra senectus dui ultricies dolor.</span>
+							
+							</div>
+							
+							<div class="lg:w-231.5 flex flex-col space-y-5">
+								<details class="accordion-item shadow py-8 pl-10 pr-10">
+									<summary class="py-4 pr-5 text-3xl">
+										What type of projects do you do?
+									</summary>
+									
+									<span class="text-default leading-loose">Lorem ipsum dolor sit amet, consectetur
+									                                         adipiscing elit. In nisi, augue urna,
+									                                         mauris elementum ligula<br> semper enim.
+									                                         Tristique sed sit facilisis ultrices rhoncus eget ullamcorper tellus.</span>
+								
+								</details>
+								
+								<details class="accordion-item shadow py-8 pl-10 pr-10">
+									<summary class="py-4 pr-5 text-3xl">
+										How much time I will spend on planning?
+									</summary>
+									
+									<span class="text-default leading-loose">Lorem ipsum dolor sit amet, consectetur
+									                                         adipiscing elit. In nisi, augue urna,
+									                                         mauris elementum ligula<br> semper enim.
+									                                         Tristique sed sit facilisis ultrices rhoncus eget ullamcorper tellus.</span>
+								</details>
+								
+								<details class="accordion-item shadow py-8 pl-10 pr-10">
+									<summary class="py-4 pr-5 text-3xl">
+										Can I specify delivery date when ordering?
+									</summary>
+									
+									<span class="text-default leading-loose">Lorem ipsum dolor sit amet, consectetur
+									                                         adipiscing elit. In nisi, augue urna,
+									                                         mauris elementum ligula<br> semper enim.
+									                                         Tristique sed sit facilisis ultrices rhoncus eget ullamcorper tellus.</span>
+								</details>
+								
+								<details class="accordion-item shadow py-8 pl-10 pr-10">
+									<summary class="py-4 pr-5 text-3xl">
+										Are there any discounts included?
+									</summary>
+									
+									<span class="text-default leading-loose">Lorem ipsum dolor sit amet, consectetur
+									                                         adipiscing elit. In nisi, augue urna,
+									                                         mauris elementum ligula<br> semper enim.
+									                                         Tristique sed sit facilisis ultrices rhoncus eget ullamcorper tellus.</span>
+								</details>
+							</div>
+						</section>
+						
+						
+						<section data-aos="zoom-in-up"
+						         id="blogs"
+						         class="3xl:ml-50 mt-64 3xl:mr-52 3xl:w-382 overflow-hidden">
+							<div class="flex flex-col text-center 2xl:text-left">
+								<h2 class="inline-block text-5xl 3xl:text-left mb-8 font-serif capitalize">Latest blog
+								                                                                           posts</h2>
+								<span class="text-default leading-loose">Id at urna non viverra eu volutpat porttitor
+										                                         elementum.<br> Viverra senectus dui ultricies dolor.</span>
+							
+							</div>
+							
+							<div
+									class="swiper swiper-container-1 overflow-visible mt-20 px-5 inline-flex flex-col space-y-5 lg:space-y-0 items-center lg:flex-row lg:space-x-10">
+								
+								<div
+										class="swiper-slide lg:bg-blog1 sm:w-96 sm:h-114.25 lg:w-120.5 bg-no-repeat relative">
+									<div class="lg:w-105 bg-white lg:absolute -bottom-44 left-7 px-8 pt-7 pb-8 shadow-lg">
+										<time class="text-light-grey">Mar 30, 2021</time>
+										<h4 class="text-xl text-primary leading-relaxed capitalize mt-2.5 mb-3.5">
+											modern
+											vibes
+											bedrooms,
+											todays
+											trending
+											design</h4>
+										
+										<p class="text-default text-base leading-loose tracking-wide">
+											Consequat, volutpat morbi tempor elit tellus, ante in mattis.
+											Facilisi
+											morbi
+											ipsum
+											dui aliquet... Read More
+										</p>
+									</div>
+								</div>
+								<div
+										class="swiper-slide lg:bg-blog1 sm:w-96 sm:h-114.25 lg:w-120.5 bg-no-repeat relative">
+									<div class="lg:w-105 bg-white lg:absolute -bottom-44 left-7 px-8 pt-7 pb-8 shadow-lg">
+										<time class="text-light-grey">Mar 30, 2021</time>
+										<h4 class="text-xl text-primary leading-relaxed capitalize mt-2.5 mb-3.5">
+											modern
+											vibes
+											bedrooms,
+											todays
+											trending
+											design</h4>
+										
+										<p class="text-default text-base leading-loose tracking-wide">
+											Consequat, volutpat morbi tempor elit tellus, ante in mattis.
+											Facilisi
+											morbi
+											ipsum
+											dui aliquet... Read More
+										</p>
+									</div>
+								</div>
+								<div
+										class="swiper-slide lg:bg-blog1 sm:w-96 sm:h-114.25 lg:w-120.5 bg-no-repeat relative">
+									<div class="lg:w-105 bg-white lg:absolute -bottom-44 left-7 px-8 pt-7 pb-8 shadow-lg">
+										<time class="text-light-grey">Mar 30, 2021</time>
+										<h4 class="text-xl text-primary leading-relaxed capitalize mt-2.5 mb-3.5">
+											modern
+											vibes
+											bedrooms,
+											todays
+											trending
+											design</h4>
+										
+										<p class="text-default text-base leading-loose tracking-wide">
+											Consequat, volutpat morbi tempor elit tellus, ante in mattis.
+											Facilisi
+											morbi
+											ipsum
+											dui aliquet... Read More
+										</p>
+									</div>
+								</div>
+								<div
+										class="swiper-slide lg:bg-blog1 sm:w-96 sm:h-114.25 lg:w-120.5 bg-no-repeat relative">
+									<div class="lg:w-105 bg-white lg:absolute -bottom-44 left-7 px-8 pt-7 pb-8 shadow-lg">
+										<time class="text-light-grey">Mar 30, 2021</time>
+										<h4 class="text-xl text-primary leading-relaxed capitalize mt-2.5 mb-3.5">
+											modern
+											vibes
+											bedrooms,
+											todays
+											trending
+											design</h4>
+										
+										<p class="text-default text-base leading-loose tracking-wide">
+											Consequat, volutpat morbi tempor elit tellus, ante in mattis.
+											Facilisi
+											morbi
+											ipsum
+											dui aliquet... Read More
+										</p>
+									</div>
+								</div>
+								<div
+										class="swiper-slide lg:bg-blog1 sm:w-96 sm:h-114.25 lg:w-120.5 bg-no-repeat relative">
+									<div class="lg:w-105 bg-white lg:absolute -bottom-44 left-7 px-8 pt-7 pb-8 shadow-lg">
+										<time class="text-light-grey">Mar 30, 2021</time>
+										<h4 class="text-xl text-primary leading-relaxed capitalize mt-2.5 mb-3.5">
+											modern
+											vibes
+											bedrooms,
+											todays
+											trending
+											design</h4>
+										
+										<p class="text-default text-base leading-loose tracking-wide">
+											Consequat, volutpat morbi tempor elit tellus, ante in mattis.
+											Facilisi
+											morbi
+											ipsum
+											dui aliquet... Read More
+										</p>
+									</div>
+								</div>
+								
+								<div class="swiper-slide lg:bg-blog1 sm:w-96 sm:h-114.25 lg:w-120.5 bg-no-repeat relative">
+									<div class="lg:w-105 bg-white lg:absolute -bottom-44 left-7 px-8 pt-7 pb-8 shadow-lg">
+										<time class="text-light-grey">Mar 30, 2021</time>
+										<h4 class="text-xl text-primary leading-relaxed capitalize mt-2.5 mb-3.5">
+											modern
+											vibes
+											bedrooms,
+											todays
+											trending
+											design</h4>
+										
+										<p class="text-default text-base leading-loose tracking-wide">
+											Consequat, volutpat morbi tempor elit tellus, ante in mattis.
+											Facilisi
+											morbi
+											ipsum
+											dui aliquet... Read More
+										</p>
+									</div>
+								</div>
+							<div class="swiper-pagination"></div>
+							</div>
+							
+							
+							
+							<div class="w-full grid place-content-center lg:mt-78">
+								<button
+										class="inline-flex items-center uppercase border px-7 py-3.5 w-52 h-16.75 text-base text-primary transition-all duration-150 hover:scale-110">
+									View all blogs
+									
+									<svg xmlns="http://www.w3.org/2000/svg"
+									     fill="none"
+									     viewBox="0 0 24 24"
+									     stroke-width="1.5"
+									     stroke="currentColor"
+									     class="w-6 h-6">
+										<path stroke-linecap="round"
+										      stroke-linejoin="round"
+										      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+									</svg>
+								
+								</button>
+							</div>
+						</section>
+						
+						<section data-aos="zoom-in-up" id="contact" class="mt-48 relative px-5">
+							<div class="hidden 2xl:block mr-18 ml-202.5">
+								<img src="assets/waranont-joe-qZkMKG3JcRM-unsplash%201.png" alt="">
+							</div>
+							<div
+									class="bg-dirty-white 3xl:w-240 3xl:h-202.5 3xl:pl-40 text-center 3xl:pr-48 pt-28 3xl:absolute left-0 bottom-0">
+								<h2 class="text-5xl mb-8 font-serif capitalize">Contact me</h2>
+								
+								<p class="lg:text-2xl text-default font-light leading-loose">Get in touch by staying
+								                                                             connected
+								                                                             with
+								                                                             us. If you have any
+								                                                             question
+								                                                             about
+								                                                             our
+								                                                             process or company? Let us
+								                                                             know
+								                                                             how
+								                                                             we
+								                                                             can help. Feel free to
+								                                                             contact
+								                                                             us.</p>
+								
+								<div class="mt-8">
+									<form action="#">
+										<div class="grid grid-cols-1 justify-items-center 3xl:grid-cols-2 gap-y-11 gap-x-5">
+											<input type="text" placeholder="Your First Name*"
+											       class="w-full lg:w-96 3xl:w-72 border-0 bg-transparent border-b focus:outline-none focus:border-0 placeholder:italic placeholder:font-light">
+											<input type="text" placeholder="Your Last Name*"
+											       class="w-full lg:w-96 3xl:w-72 border-0 bg-transparent border-b placeholder:italic placeholder:font-light">
+											<input type="text" placeholder="Your Email Address*"
+											       class="w-full lg:w-96 3xl:w-72 border-0 bg-transparent border-b placeholder:italic placeholder:font-light">
+											<input type="text" placeholder="Your Phone Number"
+											       class="w-full lg:w-96 3xl:w-72 border-0 bg-transparent border-b placeholder:italic placeholder:font-light">
+											<input type="text" placeholder="Your Message*"
+											       class="w-full lg:w-96 3xl:w-full border-0 3xl:col-span-2 bg-transparent border-b placeholder:italic placeholder:font-light">
+										</div>
+										<div class="2xl:mt-24 text-left">
+											<button
+													class="inline-flex justify-center items-center uppercase bg-black py-3.5 w-40 h-16.75 text-base text-white transition-all duration-150 hover:scale-110">
+												Submit
+											</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</section>
+					</div>
+				</main>
+			
+			</div>
+			
+			
+			<footer
+					class="mt-24 bg-footer-bg pt-28 md:pb-14 3xl:pr-48 3xl:pl-50 w-full text-footer-text">
+				<div class="flex flex-col 2xl:flex-row lg:flex-wrap items-center justify-center">
+					<div class="w-89 mb-32 2xl:mr-32.75">
+						<img class="mb-5" src="./assets/logo-footer.png" alt="logo">
+						
+						<span class="mb-10 text-base leading-loose tracking-wide text-default">
+								Tristique lacus ullamcorper massa posuere nisl molestie. Nullam montes, tortor rhoncus massa. Nisl tellus etiam nec, urna.
+							</span>
+						
+						<div class="flex space-x-5 mt-10">
+							<div class="w-9 h-9 p-5 bg-white grid place-content-center">
+								<svg
+										class="w-4 h-4 hover:fill-primary fill-default hover:cursor-pointer transition-all duration-150 ease-in"
+										data-name="Layer 1"
+										viewBox="0 0 24 24">
+									<path d="M15.12,5.32H17V2.14A26.11,26.11,0,0,0,14.26,2C11.54,2,9.68,3.66,9.68,6.7V9.32H6.61v3.56H9.68V22h3.68V12.88h3.06l.46-3.56H13.36V7.05C13.36,6,13.64,5.32,15.12,5.32Z" />
+								</svg>
+							</div>
+							<div class="w-9 h-9 p-5 bg-white grid place-content-center">
+								<svg
+										class="w-4 h-4 hover:stroke-primary fill-default hover:cursor-pointer transition-all duration-150 ease-in"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 16 16">
+									<g fill="none" stroke="#939393" class="hover:stroke-primary" stroke-miterlimit="10">
+										<path d="M11.5 15.5h-7a4 4 0 0 1-4-4v-7a4 4 0 0 1 4-4h7a4 4 0 0 1 4 4v7a4 4 0 0 1-4 4z" />
+										<circle cx="8" cy="8" r="3.5" />
+										<circle cx="12.5" cy="3.5" r=".5" />
+									</g>
+								</svg>
+							</div>
+							<div class="w-9 h-9 p-5 bg-white grid place-content-center">
+								<svg
+										class="w-4 h-4 hover:fill-primary fill-default hover:cursor-pointer transition-all duration-150 ease-in"
+										xmlns="http://www.w3.org/2000/svg"
+										data-name="Layer 1"
+										viewBox="0 0 24 24">
+									<path d="M22,5.8a8.49,8.49,0,0,1-2.36.64,4.13,4.13,0,0,0,1.81-2.27,8.21,8.21,0,0,1-2.61,1,4.1,4.1,0,0,0-7,3.74A11.64,11.64,0,0,1,3.39,4.62a4.16,4.16,0,0,0-.55,2.07A4.09,4.09,0,0,0,4.66,10.1,4.05,4.05,0,0,1,2.8,9.59v.05a4.1,4.1,0,0,0,3.3,4A3.93,3.93,0,0,1,5,13.81a4.9,4.9,0,0,1-.77-.07,4.11,4.11,0,0,0,3.83,2.84A8.22,8.22,0,0,1,3,18.34a7.93,7.93,0,0,1-1-.06,11.57,11.57,0,0,0,6.29,1.85A11.59,11.59,0,0,0,20,8.45c0-.17,0-.35,0-.53A8.43,8.43,0,0,0,22,5.8Z" />
+								</svg>
+							</div>
+							<div class="w-9 h-9 p-5 bg-white grid place-content-center">
+								<svg class="w-4 h-4 hover:fill-primary fill-default hover:cursor-pointer transition-all duration-150 ease-in"
+								     xmlns="http://www.w3.org/2000/svg"
+								     viewBox="0 0 16 16">
+									<path fill-rule="evenodd"
+									      d="M15.32 4.06c-.434-.772-.905-.914-1.864-.968C12.498 3.027 10.089 3 8.002 3c-2.091 0-4.501.027-5.458.091-.957.055-1.429.196-1.867.969C.23 4.831 0 6.159 0 8.497v.008c0 2.328.23 3.666.677 4.429.438.772.909.912 1.866.977.958.056 3.368.089 5.459.089 2.087 0 4.496-.033 5.455-.088.959-.065 1.43-.205 1.864-.977.451-.763.679-2.101.679-4.429v-.008c0-2.339-.228-3.667-.68-4.438zM6 11.5v-6l5 3-5 3z"
+									      clip-rule="evenodd" />
+								</svg>
+							</div>
+							<div class="w-9 h-9 p-5 bg-white grid place-content-center">
+								<svg class="w-4 h-4 hover:fill-primary fill-default hover:cursor-pointer transition-all duration-150 ease-in"
+								     xmlns="http://www.w3.org/2000/svg"
+								     data-name="Layer 1"
+								     viewBox="0 0 24 24">
+									<path d="M20.07,6.35H15V7.76h5.09ZM19,16.05a2.23,2.23,0,0,1-1.3.37A2.23,2.23,0,0,1,16,15.88a2.49,2.49,0,0,1-.62-1.76H22a6.47,6.47,0,0,0-.17-2,5.08,5.08,0,0,0-.8-1.73,4.17,4.17,0,0,0-1.42-1.21,4.37,4.37,0,0,0-2-.45,4.88,4.88,0,0,0-1.9.37,4.51,4.51,0,0,0-1.47,1,4.4,4.4,0,0,0-.95,1.52,5.4,5.4,0,0,0-.33,1.91,5.52,5.52,0,0,0,.32,1.94A4.46,4.46,0,0,0,14.16,17a4,4,0,0,0,1.46,1,5.2,5.2,0,0,0,1.94.34,4.77,4.77,0,0,0,2.64-.7,4.21,4.21,0,0,0,1.63-2.35H19.62A1.54,1.54,0,0,1,19,16.05Zm-3.43-4.12a1.87,1.87,0,0,1,1-1.14,2.28,2.28,0,0,1,1-.2,1.73,1.73,0,0,1,1.36.49,2.91,2.91,0,0,1,.63,1.45H15.41A3,3,0,0,1,15.52,11.93Zm-5.29-.48a3.06,3.06,0,0,0,1.28-1,2.72,2.72,0,0,0,.43-1.58,3.28,3.28,0,0,0-.29-1.48,2.4,2.4,0,0,0-.82-1,3.24,3.24,0,0,0-1.27-.52,7.54,7.54,0,0,0-1.64-.16H2V18.29H8.1a6.55,6.55,0,0,0,1.65-.21,4.55,4.55,0,0,0,1.43-.65,3.13,3.13,0,0,0,1-1.14,3.41,3.41,0,0,0,.37-1.65,3.47,3.47,0,0,0-.57-2A3,3,0,0,0,10.23,11.45ZM4.77,7.86H7.36a4.17,4.17,0,0,1,.71.06,1.64,1.64,0,0,1,.61.22,1.05,1.05,0,0,1,.42.44,1.42,1.42,0,0,1,.16.72,1.36,1.36,0,0,1-.47,1.15,2,2,0,0,1-1.22.35H4.77ZM9.61,15.3a1.28,1.28,0,0,1-.45.5,2,2,0,0,1-.65.26,3.33,3.33,0,0,1-.78.08h-3V12.69h3a2.4,2.4,0,0,1,1.45.41,1.65,1.65,0,0,1,.54,1.39A1.77,1.77,0,0,1,9.61,15.3Z" />
+								</svg>
+							</div>
+						</div>
+					</div>
+					
+					<div class="pt-6 2xl:pt-0 inline-flex flex-col lg:flex-row space-y-9 lg:space-y-0">
+						<div class="flex flex-col flex-shrink-0 space-y-3.5 md:mr-32">
+							<h4 class="text-xl text-textDefault">Quick links</h4>
+							
+							<ul class="text-default flex flex-col py-4 space-y-4">
+								<li><a href="#home">Home</a></li>
+								<li><a href="#aboutMe">About</a></li>
+								<li><a href="#services">Services</a></li>
+								<li><a href="#portfolio">Portfolios</a></li>
+								<li><a href="#blogs">Blogs</a></li>
+								<li><a href="#contact">Contact us</a></li>
+							</ul>
+						</div>
+						
+						<div class="flex flex-col flex-shrink-0 space-y-3.5 mr-20">
+							<h4 class="text-xl text-textDefault capitalize mb-4">Contact info</h4>
+							
+							<address class="text-sm">
+								<p class="flex items-center">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+									     stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-2">
+										<path stroke-linecap="round"
+										      stroke-linejoin="round"
+										      d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+										<path stroke-linecap="round"
+										      stroke-linejoin="round"
+										      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+									</svg>
+									2489 Locust Court, Los Angeles
+								</p>
+							</address>
+							
+							<address class="text-sm">
+								<p class="flex items-center">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+									     stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-2">
+										<path stroke-linecap="round"
+										      stroke-linejoin="round"
+										      d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+										<path stroke-linecap="round"
+										      stroke-linejoin="round"
+										      d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+									</svg>
+									3927 Red Maple Drive, Los Angeles
+								</p>
+							</address>
+							
+							<p class="flex items-center text-sm">
+								<svg xmlns="http://www.w3.org/2000/svg"
+								     fill="none"
+								     viewBox="0 0 24 24"
+								     stroke-width="1.5"
+								     stroke="currentColor"
+								     class="w-4 h-4 mr-3">
+									<path stroke-linecap="round"
+									      stroke-linejoin="round"
+									      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+								</svg>
+								
+								+63 667 341 3463
+							</p>
+							
+							<address class="text-sm">
+								<p class="flex items-center">
+									<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+									     stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-2">
+										<path stroke-linecap="round"
+										      stroke-linejoin="round"
+										      d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+									</svg>
+									contact@templatesjungle.com
+								</p>
+							</address>
+						
+						</div>
+						
+						<div class="flex flex-col space-y-3.5">
+							<h4 class="text-xl text-textDefault capitalize">Subscribe us</h4>
+							
+							<span class="tracking-wide leading-loose">Subscribe to our newsletter to stay
+								                                                  updated<br>
+								                                           for new products
+								                             and
+								                stunnning news
+								       .</span>
+							
+							<form class="flex flex-col 3xl:flex-row">
+								<input type="text" placeholder="Enter your email address"
+								       class="3xl:w-72 placeholder:text-light-grey border-0 shadow-lg">
+								<button class="w-full 3xl:w-auto bg-black py-4 px-4 text-white">
+									Send
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				
+				<div
+						class="text-default flex flex-col lg:flex-row mt-20 text-center space-y-5 lg:space-y-0 pb-4 lg:px-20 items-center justify-between font-base font-light tracking-wide">
+					<span>&#169; TemplatesJungle. All rights reserved.</span>
+					<span>Designed by <strong>me</strong></span>
+				</div>
+			</footer>
+		</div>
+		
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

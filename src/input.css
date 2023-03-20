@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .menu-item {
+        @apply text-base font-normal tracking-wide text-default transition-all duration-150 ease-in hover:cursor-pointer hover:text-primary
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+}
